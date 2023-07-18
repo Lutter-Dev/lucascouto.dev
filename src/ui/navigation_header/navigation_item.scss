@@ -1,0 +1,27 @@
+.navigation-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(var(--color-primary));
+}
+
+.navigation-item .link {
+  padding: 16px;
+}
+
+.navigation-item.past-intro {
+  color: rgb(var(--color-secondary));
+}
+
+body.mobile {
+  .navigation-item {
+    color: rgb(var(--color-secondary));
+    width: 100%;
+    text-align: center;
+  }
+
+  .navigation-item:hover {
+    background-color: rgba(var(--color-foreground), 0.2);
+    border-radius: 40px;
+  }
+}

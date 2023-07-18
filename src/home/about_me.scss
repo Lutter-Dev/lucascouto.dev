@@ -1,0 +1,35 @@
+.about-me .content {
+  margin-right: 8vw;
+}
+
+body.mobile {
+  .about-me {
+    flex-direction: column !important;
+  }
+
+  .about-me .image {
+    height: 45vw;
+  }
+
+  .about-me .content {
+    margin: 8vw;
+  }
+
+  .about-me .expanded {
+    height: unset !important;
+  }
+}
+
+body {
+  .about-me {
+    flex-direction: row !important;
+  }
+
+  .about-me .image {
+    height: 100%;
+  }
+
+  .about-me .content {
+    height: 100%;
+  }
+}

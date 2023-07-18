@@ -1,0 +1,39 @@
+.header-mobile-menu {
+  width: fit-content;
+  cursor: pointer;
+  padding: 24px;
+}
+
+.header-mobile-menu .toggle-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.header-mobile-menu .toggle-container .toggle {
+  width: 24px;
+  height: 3px;
+  background-color: rgb(var(--color-secondary));
+  border-radius: 3px;
+  opacity: 1;
+  transition: all 0.2s ease;
+}
+
+.header-mobile-menu.open .toggle-container .toggle:nth-child(1) {
+  transform: rotate(45deg);
+  margin-top: 6px;
+}
+
+.header-mobile-menu.open .toggle-container .toggle:nth-child(3) {
+  transform: rotate(-45deg);
+  margin-top: -14px;
+  margin-bottom: 8px;
+}
+
+.header-mobile-menu.open .toggle-container .toggle:nth-child(2) {
+  opacity: 0;
+}
+
+.header-mobile-menu .menu-container {
+  background-color: rgb(0, 0, 0, 1);
+}

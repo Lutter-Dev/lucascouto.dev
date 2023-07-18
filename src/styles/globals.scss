@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'dark_theme.scss';
+@import 'light_theme.scss';
+@import '../home/index.scss';
+@import '../ui/index.scss';
+
+body {
+  color: rgb(var(--color-foreground));
+  background-color: rgb(var(--color-background));
+}
+
+h1 {
+  color: rgb(var(--color-secondary));
+  font-weight: 900;
+  font-size: 36px;
+}
+
+h2 {
+  color: rgb(var(--color-primary-alt));
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 16px;
+}

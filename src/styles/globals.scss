@@ -39,9 +39,25 @@ p {
   font-size: 16px;
 }
 
-input {
+input,
+textarea {
   width: 100%;
   border-bottom: 1px solid rgb(var(--color-primary-alt));
+  margin-bottom: 2px;
+  background-color: transparent;
+  resize: none;
+}
+
+input:focus {
+  border-bottom: 3px solid rgb(var(--color-primary-alt));
+  margin-bottom: 0px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
 }
 
 .link {

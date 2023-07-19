@@ -1,4 +1,5 @@
 import { DecoratedContainer, DecoratedPicture, FlexBox } from '@ui'
+import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -7,6 +8,8 @@ type Props = {
 }
 
 export function BlogSection({ id }: Props) {
+  const { t } = useTranslation()
+
   return (
     <FlexBox id={id} className="blog">
       <FlexBox className="image" align="center" justify="center">
@@ -20,26 +23,19 @@ export function BlogSection({ id }: Props) {
         </DecoratedPicture>
       </FlexBox>
       <FlexBox className="content" justify="center">
-        <h2>Blog</h2>
+        <h2>{t('blog')}</h2>
         <br />
         <br />
         <DecoratedContainer type="alt">
           <div>
-            <p>
-              This is something very recent for me, but I&apos;ve been enjoying
-              a lot!
-            </p>
+            <p>{t('blog_1')}</p>
+            <br />
+            <p>{t('blog_2')}</p>
             <br />
             <p>
-              My intent with this is to share my experiences as a developer,
-              create interesting tutorials and give tipos and tricks to
-              hopefully help other help.
-            </p>
-            <br />
-            <p>
-              You can access it{' '}
+              {t('can_access')}{' '}
               <Link className="link" href="/blog">
-                here
+                {t('here')}
               </Link>
               .
             </p>

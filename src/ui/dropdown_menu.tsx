@@ -2,6 +2,7 @@ import { cn } from '@utils/cn'
 import { useState } from 'react'
 
 type DropdownMenuProps = {
+  className?: string
   items: string[]
   selectedItem: string
   isInline?: boolean
@@ -9,6 +10,7 @@ type DropdownMenuProps = {
 }
 
 export function DropdownMenu({
+  className,
   items,
   selectedItem,
   isInline = false,
@@ -26,7 +28,7 @@ export function DropdownMenu({
   }
 
   return (
-    <div className="dropdown">
+    <div className={cn('dropdown', className)}>
       <button className="button" onClick={handleToggle}>
         <h1>{selectedItem}</h1>
         <div className="arrow-dropdown" />

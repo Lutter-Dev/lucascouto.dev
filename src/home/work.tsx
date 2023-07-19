@@ -1,5 +1,6 @@
 import { DropdownMenu, FlexBox } from '@ui'
 import { cn } from '@utils/cn'
+import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
@@ -16,10 +17,12 @@ type Props = {
 export function WorkSection({ id }: Props) {
   const [selectedWork, setSelectedWork] = useState(works[0])
 
+  const { t } = useTranslation()
+
   return (
     <FlexBox id={id} className="work">
       <FlexBox className="content" justify="center" align="flex-end">
-        <h2>Some of my work</h2>
+        <h2>{t('some_my_work')}</h2>
         <br />
         <br />
         <DropdownMenu
@@ -31,11 +34,7 @@ export function WorkSection({ id }: Props) {
         />
         <br />
         <div className={selectedWork == HATCH ? 'visible' : 'hidden'}>
-          <p>
-            Hatch is a platform that helps people start working together in just
-            a few seconds. Using this app you can create a contract, track time
-            and get paid.
-          </p>
+          <p>{t('hatch_description')}</p>
           <br />
           <FlexBox direction="row" justify="flex-end" gap={16}>
             <Link
@@ -43,32 +42,23 @@ export function WorkSection({ id }: Props) {
               href="https://www.addhatch.com/"
               target="_blank"
             >
-              Website
+              {t('site')}
             </Link>
             <Link
               className="link"
               href="https://www.addhatch.com/app"
               target="_blank"
             >
-              App
+              {t('app')}
             </Link>
           </FlexBox>
         </div>
         <div className={selectedWork == ACTIVITE ? 'visible' : 'hidden'}>
-          <p>
-            Activite Personal is a companion app for Personal Trainers to help
-            with their daily routine by allowing them to create fitness
-            assessments of their clients. It was built using Flutter, supporting
-            both Android and iOS.
-          </p>
+          <p>{t('activite_description_1')}</p>
           <br />
-          <p>
-            I&apos;m extremely proud of the work I did on this project,
-            especially because I was able to work on everything related to it:
-            the app itself, API, UX, design, website and marketing.
-          </p>
+          <p>{t('activite_description_2')}</p>
           <br />
-          <p>Unfortunately it was discontinued in late 2022.</p>
+          <p>{t('activite_description_3')}</p>
         </div>
       </FlexBox>
       <div className="divider" />

@@ -39,3 +39,20 @@
     -webkit-mask-image: var(--threads);
     mask-image: var(--threads);
 }
+
+body {
+    .footer .content {
+        flex-direction: row !important;
+    }
+}
+
+body.mobile {
+    .footer .content {
+        flex-direction: column !important;
+        gap: 16px !important;
+    }
+
+    .footer .actions {
+        justify-content: center !important;
+    }
+}

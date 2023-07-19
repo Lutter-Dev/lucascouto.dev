@@ -1,13 +1,20 @@
 import { FlexBox } from './flex_box'
 import Link from 'next/link'
+import { LocaleSwitcher } from './locale_switcher'
 
 export function Footer() {
   return (
     <FlexBox className="footer">
       <div className="divider" />
-      <FlexBox direction="row" justify="space-between" align="center">
+      <FlexBox
+        className="content"
+        direction="row"
+        justify="space-between"
+        align="center"
+      >
         <p>© Lucas Couto 2023</p>
-        <FlexBox direction="row" gap={16}>
+
+        <FlexBox className="actions" direction="row" gap={16} align="center">
           <Link
             href="https://www.linkedin.com/in/lucas-couto-45b35a74/"
             target="_blank"
@@ -23,6 +30,7 @@ export function Footer() {
           <Link href="https://www.threads.net/@lucascoutodev" target="_blank">
             <div className="icon threads" />
           </Link>
+          <LocaleSwitcher />
         </FlexBox>
       </FlexBox>
     </FlexBox>

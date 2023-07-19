@@ -3,9 +3,9 @@ import { useCallback, useEffect, useState } from 'react'
 import { cn } from '@utils/cn'
 import { NavigationItem } from './navigation_item'
 import { useTranslation } from 'next-i18next'
-import { ThemeToggle } from '../theme_toggle'
 import { useWindowData } from '@utils/hooks/use-window-data'
 import { useScrolledPastIntroSection } from '@utils/hooks/use-scrolled-past-intro-section'
+import { ThemeToggle } from '../theme_toggle'
 
 export function MainNavigationHeader() {
   const windowData = useWindowData()

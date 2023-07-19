@@ -7,21 +7,38 @@
 
 .navigation-item .link {
   padding: 16px;
+  color: rgb(var(--color-primary));
 }
 
-.navigation-item.past-intro {
+.navigation-item.past-intro .link {
   color: rgb(var(--color-secondary));
 }
 
+.navigation-item.past-intro:hover {
+  background-color: rgba(var(--color-foreground), 0.2);
+  border-radius: 40px;
+}
+
 body.mobile {
-  .navigation-item {
+  .navigation-item .link {
     color: rgb(var(--color-secondary));
     width: 100%;
     text-align: center;
   }
 
+  .navigation-item {
+    width: 100%;
+  }
+
   .navigation-item:hover {
     background-color: rgba(var(--color-foreground), 0.2);
+    border-radius: 40px;
+  }
+}
+
+body {
+  .navigation-item:hover {
+    background-color: rgba(var(--color-background), 0.2);
     border-radius: 40px;
   }
 }

@@ -1,5 +1,7 @@
-export {} from './decorated_container'
+export { DecoratedContainer } from './decorated_container'
 export { DecoratedPicture } from './decorated_picture'
+export { DropdownMenu } from './dropdown_menu'
 export { Expanded } from './expanded'
 export { FlexBox } from './flex_box'
+export { Footer } from './footer'
 export { MainNavigationHeader } from './navigation_header'

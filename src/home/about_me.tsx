@@ -1,10 +1,13 @@
-import { DecoratedPicture, Expanded, FlexBox } from '@ui'
+import { DecoratedContainer, DecoratedPicture, Expanded, FlexBox } from '@ui'
 import Image from 'next/image'
-import { DecoratedContainer } from 'src/ui/decorated_container'
 
-export function AboutMeSection() {
+type Props = {
+  id?: string
+}
+
+export function AboutMeSection({ id }: Props) {
   return (
-    <FlexBox className="about-me">
+    <FlexBox id={id} className="about-me">
       <Expanded>
         <FlexBox className="image" align="center" justify="center">
           <DecoratedPicture>
@@ -20,7 +23,6 @@ export function AboutMeSection() {
       <Expanded>
         <FlexBox className="content" justify="center">
           <h2>About me</h2>
-          <br />
           <br />
           <br />
           <h1>Hi, I&apos;m Lucas!</h1>

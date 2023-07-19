@@ -50,7 +50,7 @@ export function MainNavigationHeader() {
         >
           <ul>
             <NavigationItem
-              label={t('about_me')}
+              label={t('about')}
               linkTo="#about-me"
               toggleMobileMenu={toggleMobileMenu}
             />
@@ -62,6 +62,11 @@ export function MainNavigationHeader() {
             <NavigationItem
               label={t('blog')}
               linkTo="#blog"
+              toggleMobileMenu={toggleMobileMenu}
+            />
+            <NavigationItem
+              label={t('contact')}
+              linkTo="#contact"
               toggleMobileMenu={toggleMobileMenu}
             />
             <ThemeToggle />

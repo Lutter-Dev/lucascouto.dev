@@ -1,0 +1,39 @@
+.blog .content {
+    margin-right: 8vw;
+}
+
+.blog .decorated-picture .decoration-children img {
+    border-radius: 0%;
+}
+
+body.mobile {
+    .blog {
+        flex-direction: column !important;
+    }
+
+    .blog .image {
+        height: 45vw;
+    }
+
+    .blog .content {
+        margin: 8vw;
+    }
+
+    .blog .expanded {
+        height: unset !important;
+    }
+}
+
+body {
+    .blog {
+        flex-direction: row !important;
+    }
+
+    .blog .image {
+        height: 100%;
+    }
+
+    .blog .content {
+        height: 100%;
+    }
+}

@@ -16,10 +16,10 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
+      "@home": ["src/home/index.ts"],
       "@styles": ["src/styles/globals.scss"],
       "@ui": ["src/ui/index.ts"],
       "@utils/*": ["src/util/*"],
-      "@home": ["src/home/index.ts"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

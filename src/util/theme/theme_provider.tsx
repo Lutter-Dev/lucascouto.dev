@@ -1,11 +1,5 @@
 import { useTheme } from '@utils/theme/use-theme'
-import {
-  createContext,
-  ReactElement,
-  ReactNode,
-  useEffect,
-  useState
-} from 'react'
+import { createContext, ReactNode } from 'react'
 
 export const ThemeContext = createContext({
   isDarkTheme: true,

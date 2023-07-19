@@ -5,6 +5,7 @@ type AlignItems = 'flex-start' | 'center' | 'flex-end'
 type JustifyContent = 'flex-start' | 'center' | 'flex-end' | 'space-between'
 
 type Props = {
+  id?: string
   children: ReactNode
   direction?: Direction
   className?: string
@@ -15,6 +16,7 @@ type Props = {
 }
 
 export function FlexBox({
+  id,
   children,
   direction = 'column',
   className,
@@ -25,6 +27,7 @@ export function FlexBox({
 }: Props) {
   return (
     <div
+      id={id}
       className={className}
       style={{
         display: 'flex',

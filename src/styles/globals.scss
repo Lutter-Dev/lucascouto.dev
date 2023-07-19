@@ -7,7 +7,18 @@
 @import '../home/index.scss';
 @import '../ui/index.scss';
 
+html {
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
+}
+
 body {
+  --arrow_dropdown: url('http://localhost:3000/assets/images/arrow_dropdown.svg');
+  --linkedin: url('http://localhost:3000/assets/icons/linkedin.svg');
+  --github: url('http://localhost:3000/assets/icons/github.svg');
+  --twitter: url('http://localhost:3000/assets/icons/twitter.svg');
+  --threads: url('http://localhost:3000/assets/icons/threads.svg');
+
   color: rgb(var(--color-foreground));
   background-color: rgb(var(--color-background));
 }
@@ -26,4 +37,24 @@ p {
   text-align: justify;
   text-justify: inter-word;
   font-size: 16px;
+}
+
+input {
+  width: 100%;
+  border-bottom: 1px solid rgb(var(--color-primary-alt));
+}
+
+.link {
+  color: rgb(var(--color-primary-alt));
+}
+
+.btn-default {
+  color: rgb(var(--color-primary-alt));
+  border: 1px solid rgb(var(--color-primary-alt));
+  padding: 12px 16px;
+  border-radius: 50px;
+}
+
+.btn-default:hover {
+  background-color: rgba(var(--color-foreground), 0.1);
 }

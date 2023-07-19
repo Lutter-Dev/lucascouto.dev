@@ -1,5 +1,5 @@
 .blog .content {
-    margin-right: 8vw;
+    padding-right: 8vw;
 }
 
 .blog .decorated-picture .decoration-children img {
@@ -16,24 +16,22 @@ body.mobile {
     }
 
     .blog .content {
-        margin: 8vw;
-    }
-
-    .blog .expanded {
-        height: unset !important;
+        padding: 8vw;
     }
 }
 
 body {
     .blog {
         flex-direction: row !important;
+        padding-top: 120px;
     }
 
     .blog .image {
-        height: 100%;
+        width: 100%;
+        min-height: 45vw;
     }
 
     .blog .content {
-        height: 100%;
+        width: 100%;
     }
 }

@@ -1,5 +1,5 @@
 .about-me .content {
-  margin-right: 8vw;
+  padding-right: 8vw;
 }
 
 body.mobile {
@@ -12,24 +12,22 @@ body.mobile {
   }
 
   .about-me .content {
-    margin: 8vw;
-  }
-
-  .about-me .expanded {
-    height: unset !important;
+    padding: 8vw;
   }
 }
 
 body {
   .about-me {
     flex-direction: row !important;
+    padding-top: 120px;
   }
 
   .about-me .image {
-    height: 100%;
+    width: 100%;
+    min-height: 45vw;
   }
 
   .about-me .content {
-    height: 100%;
+    width: 100%;
   }
 }

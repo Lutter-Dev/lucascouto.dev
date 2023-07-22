@@ -2,7 +2,7 @@ import { useTheme } from '@utils/theme/use-theme'
 import { createContext, ReactNode } from 'react'
 
 export const ThemeContext = createContext({
-  isDarkTheme: true,
+  isDarkTheme: false,
   toggleTheme: () => {}
 })
 

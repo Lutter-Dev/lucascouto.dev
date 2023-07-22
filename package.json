@@ -6,9 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "codegen": "graphql-codegen"
   },
   "dependencies": {
+    "@graphql-codegen/cli": "^4.0.1",
+    "@graphql-codegen/typescript": "^4.0.1",
+    "@graphql-codegen/typescript-operations": "^4.0.1",
     "@types/node": "20.4.2",
     "@types/react": "18.2.15",
     "@types/react-dom": "18.2.7",
@@ -18,7 +22,7 @@
     "form-data": "^4.0.0",
     "graphql": "^16.7.1",
     "graphql-request": "^6.1.0",
-    "html-react-parser": "^4.0.0",
+    "html-react-parser": "^4.2.0",
     "i18next": "^23.2.11",
     "mailgun.js": "^9.2.0",
     "moment": "^2.29.4",
@@ -38,5 +42,8 @@
     "semi": false,
     "singleQuote": true,
     "trailingComma": "none"
+  },
+  "devDependencies": {
+    "@graphql-codegen/add": "^5.0.0"
   }
 }

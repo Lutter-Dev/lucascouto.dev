@@ -7,7 +7,7 @@ import { ContactSection } from './contact'
 
 export function HomePage() {
   return (
-    <FlexBox direction="column">
+    <FlexBox>
       <IntroSection />
       <AboutMeSection id="about-me" />
       <WorkSection id="work" />

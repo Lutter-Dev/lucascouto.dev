@@ -28,5 +28,17 @@
     "message": "Mensagem",
     "send_message": "Enviar mensagem",
     "thank_you_message": "Obrigado pela sua mensagem!",
-    "get_back_asap": "Eu vou te responder o mais rápido possível"
+    "get_back_asap": "Eu vou te responder o mais rápido possível",
+    "categories": "Categorias",
+    "continue_reading": "Continuar lendo",
+    "leave_reply": "Deixe um comentário",
+    "comment": "Comentário",
+    "comments": "Comentários",
+    "please_fill_fields": "Por favor, preencha todos os campos",
+    "save_name_email": "Salvar meu nome e email para a próxima vez que comentar",
+    "post_comment": "Postar comentário",
+    "comment_submitted_review": "Comentário enviado para revisão",
+    "on": "em",
+    "related_posts": "Posts relacionados",
+    "no_related_posts": "Nenhum post relacionado"
 }

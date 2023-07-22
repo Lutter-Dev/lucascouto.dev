@@ -3,19 +3,26 @@ import { useScrolledPastIntroSection } from '@utils/hooks/use-scrolled-past-intr
 import Link from 'next/link'
 
 type Props = {
+  className?: string
   label: string
   linkTo: string
   toggleMobileMenu: () => void
 }
 
-export function NavigationItem({ label, linkTo, toggleMobileMenu }: Props) {
+export function NavigationItem({
+  className,
+  label,
+  linkTo,
+  toggleMobileMenu
+}: Props) {
   const scrolledPastIntroSection = useScrolledPastIntroSection()
 
   return (
     <li
       className={cn(
         'navigation-item',
-        scrolledPastIntroSection ? 'past-intro' : ''
+        scrolledPastIntroSection ? 'past-intro' : '',
+        className
       )}
     >
       <Link className="link" href={linkTo} onClick={toggleMobileMenu}>

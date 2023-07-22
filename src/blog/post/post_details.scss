@@ -1,0 +1,16 @@
+.post-details-image {
+    position: relative !important;
+    border-radius: 16px;
+}
+
+.post-details-title {
+    align-self: center;
+}
+
+.post-details-date {
+    font-size: var(--font-size-small);
+}
+
+.post-details-content {
+    align-self: unset !important;
+}

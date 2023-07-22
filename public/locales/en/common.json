@@ -28,5 +28,17 @@
     "message": "Message",
     "send_message": "Send message",
     "thank_you_message": "Thank you for your message!",
-    "get_back_asap": "I&apos;ll get back to you as soon as possible"
+    "get_back_asap": "I&apos;ll get back to you as soon as possible",
+    "categories": "Categories",
+    "continue_reading": "Continue reading",
+    "leave_reply": "Leave a reply",
+    "comment": "Comment",
+    "comments": "Comments",
+    "please_fill_fields": "Please fill all fields",
+    "save_name_email": "Save my name and email for the next time I comment",
+    "post_comment": "Post comment",
+    "comment_submitted_review": "Comment submitted for review",
+    "on": "on",
+    "related_posts": "Related posts",
+    "no_related_posts": "No related posts"
 }

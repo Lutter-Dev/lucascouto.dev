@@ -1,0 +1,23 @@
+.blog-page {
+    width: 100%;
+    padding-top: 120px;
+
+    .footer {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+.blog-page-content {
+    width: 90%;
+    max-width: 1024px;
+    align-self: center !important;
+}
+
+body.mobile {
+    .blog-page-content {
+        width: 100%;
+        padding-right: 8vw;
+        padding-left: 8vw;
+    }
+}

@@ -1,0 +1,23 @@
+.category-posts {
+    width: 100%;
+    padding-top: 120px;
+
+    .footer {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+.category-posts-content {
+    width: 90%;
+    max-width: 1024px;
+    align-self: center !important;
+}
+
+body.mobile {
+    .category-posts-content {
+        width: 100%;
+        padding-right: 8vw;
+        padding-left: 8vw;
+    }
+}

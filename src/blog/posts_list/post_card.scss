@@ -1,0 +1,17 @@
+.post-card {
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgb(var(--color-primary-alt));
+}
+
+.post-card-content {
+    padding: 16px;
+
+    h1 {
+        font-size: var(--font-size-medium);
+    }
+}
+
+.post-card-image {
+    position: relative !important;
+}

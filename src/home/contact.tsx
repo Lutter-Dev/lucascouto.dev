@@ -67,7 +67,7 @@ export function ContactSection({ id }: Props) {
           <br />
           <br />
           <form className="form" onSubmit={handleSubmit}>
-            <FlexBox direction="row" gap={32}>
+            <FlexBox className="user-data" direction="row" gap={32}>
               <FlexBox className="field">
                 <label htmlFor="name">{t('name')}:</label>
                 <input type="text" id="name" name="name" required />

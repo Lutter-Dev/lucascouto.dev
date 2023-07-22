@@ -23,6 +23,14 @@ body.mobile {
     .contact .content {
         margin: 8vw;
     }
+
+    .contact .form {
+        width: 100%;
+    }
+
+    .user-data {
+        flex-direction: column !important;
+    }
 }
 
 body {

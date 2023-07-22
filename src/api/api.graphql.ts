@@ -5978,7 +5978,7 @@ getPosts(
             return client.request<getPostsQuery>(
               gql`
                 query getPosts($locale: Locale!) {
-  posts(locales: [$locale]) {
+  posts(locales: [$locale], orderBy: createdAt_DESC) {
     ...BasicPostDetails
   }
 }
@@ -6004,6 +6004,7 @@ getPosts(
     }
     last: 3
     locales: [$locale]
+    orderBy: createdAt_DESC
   ) {
     ...BasicPost
   }
@@ -6019,7 +6020,11 @@ getPosts(
             return client.request<getFeaturedPostsQuery>(
               gql`
                 query getFeaturedPosts($locale: Locale!) {
-  posts(where: { featuredPost: true }, locales: [$locale]) {
+  posts(
+    where: { featuredPost: true }
+    locales: [$locale]
+    orderBy: createdAt_DESC
+  ) {
     ...BasicPost
   }
 }
@@ -6034,7 +6039,7 @@ getPosts(
             return client.request<getCategoriesQuery>(
               gql`
                 query getCategories($locale: Locale!) {
-  categories(locales: [$locale]) {
+  categories(locales: [$locale], orderBy: createdAt_DESC) {
     ...BasicCategory
   }
 }
@@ -6064,7 +6069,7 @@ getPosts(
             return client.request<getCommentsQuery>(
               gql`
                 query getComments($slug: String!) {
-  comments(where: { post: { slug: $slug } }) {
+  comments(where: { post: { slug: $slug } }, orderBy: createdAt_DESC) {
     ...BasicComment
   }
 }
@@ -6079,7 +6084,11 @@ getPosts(
             return client.request<getCategoryPostsQuery>(
               gql`
                 query getCategoryPosts($locale: Locale!, $slug: String!) {
-  posts(where: { categories_some: { slug: $slug } }, locales: [$locale]) {
+  posts(
+    where: { categories_some: { slug: $slug } }
+    locales: [$locale]
+    orderBy: createdAt_DESC
+  ) {
     ...BasicPost
   }
 }

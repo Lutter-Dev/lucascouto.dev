@@ -52,7 +52,7 @@ fragment BasicComment on Comment {
 }
 
 query getPosts($locale: Locale!) {
-  posts(locales: [$locale]) {
+  posts(locales: [$locale], orderBy: createdAt_DESC) {
     ...BasicPostDetails
   }
 }
@@ -69,19 +69,24 @@ query getSimilarPosts(
     }
     last: 3
     locales: [$locale]
+    orderBy: createdAt_DESC
   ) {
     ...BasicPost
   }
 }
 
 query getFeaturedPosts($locale: Locale!) {
-  posts(where: { featuredPost: true }, locales: [$locale]) {
+  posts(
+    where: { featuredPost: true }
+    locales: [$locale]
+    orderBy: createdAt_DESC
+  ) {
     ...BasicPost
   }
 }
 
 query getCategories($locale: Locale!) {
-  categories(locales: [$locale]) {
+  categories(locales: [$locale], orderBy: createdAt_DESC) {
     ...BasicCategory
   }
 }
@@ -93,13 +98,17 @@ query getPostDetails($slug: String!, $locale: Locale!) {
 }
 
 query getComments($slug: String!) {
-  comments(where: { post: { slug: $slug } }) {
+  comments(where: { post: { slug: $slug } }, orderBy: createdAt_DESC) {
     ...BasicComment
   }
 }
 
 query getCategoryPosts($locale: Locale!, $slug: String!) {
-  posts(where: { categories_some: { slug: $slug } }, locales: [$locale]) {
+  posts(
+    where: { categories_some: { slug: $slug } }
+    locales: [$locale]
+    orderBy: createdAt_DESC
+  ) {
     ...BasicPost
   }
 }

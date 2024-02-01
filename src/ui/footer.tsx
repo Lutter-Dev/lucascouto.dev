@@ -4,6 +4,7 @@ import { LocaleSwitcher } from './locale_switcher'
 
 export function Footer() {
   return (
+    // TODO: change this to <footer>
     <FlexBox className="footer">
       <div className="divider" />
       <FlexBox
@@ -16,7 +17,7 @@ export function Footer() {
 
         <FlexBox className="actions" direction="row" gap={16} align="center">
           <Link
-            href="https://www.linkedin.com/in/lucas-couto-45b35a74/"
+            href="https://www.linkedin.com/in/lucasarcouto/"
             target="_blank"
           >
             <div className="icon linkedin" />

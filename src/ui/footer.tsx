@@ -4,8 +4,7 @@ import { LocaleSwitcher } from './locale_switcher'
 
 export function Footer() {
   return (
-    // TODO: change this to <footer>
-    <FlexBox className="footer">
+    <footer className="footer">
       <div className="divider" />
       <FlexBox
         className="content"
@@ -34,6 +33,6 @@ export function Footer() {
           <LocaleSwitcher />
         </FlexBox>
       </FlexBox>
-    </FlexBox>
+    </footer>
   )
 }

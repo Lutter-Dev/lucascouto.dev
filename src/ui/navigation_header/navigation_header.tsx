@@ -60,11 +60,6 @@ export function MainNavigationHeader() {
               toggleMobileMenu={toggleMobileMenu}
             />
             <NavigationItem
-              label={t('blog')}
-              linkTo="#blog"
-              toggleMobileMenu={toggleMobileMenu}
-            />
-            <NavigationItem
               label={t('contact')}
               linkTo="#contact"
               toggleMobileMenu={toggleMobileMenu}

@@ -17,7 +17,6 @@
     "baseUrl": ".",
     "paths": {
       "@api": ["src/api/index.ts"],
-      "@blog": ["src/blog/index.ts"],
       "@home": ["src/home/index.ts"],
       "@styles": ["src/styles/globals.scss"],
       "@ui": ["src/ui/index.ts"],

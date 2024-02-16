@@ -1,4 +1,4 @@
-This is a Next.js project created to build my personal website. It serves both as my portfolio and as a personal blog where I'll share my professional experiences.
+This is a Next.js project created to build my personal website to showcase all the work I have done.
 
 ## Running locally
 

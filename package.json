@@ -24,7 +24,7 @@
     "graphql-request": "^6.1.0",
     "html-react-parser": "^4.2.0",
     "i18next": "^23.2.11",
-    "mailgun.js": "^9.2.0",
+    "mailgun.js": "^10.2.3",
     "moment": "^2.29.4",
     "next": "13.4.10",
     "next-i18next": "^14.0.0",
